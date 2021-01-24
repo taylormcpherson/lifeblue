@@ -4,7 +4,7 @@ import {Article} from './data-skeletons';
 // big article template
 export const BIGARTICLE: Article[] = [
   {
-    title: 'Big Article Title',
+    title: 'Big Important Article Title',
     date: 'Jan 21, 2021 | 3 min read',
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, ' +
       'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut' +
