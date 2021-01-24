@@ -1,6 +1,6 @@
 # The Great Blog
 
-The goal of this project is to create a modern blog layout for a fictitious **Client**.
+The goal of this project is to create a modern blog layout for a fictitious Client.
 The layout, hierarchy, and user experience of this blog were created without the help of any templates 
 or styleguides other than those I created myself.
 View the live blog [here](https://taylormcpherson.github.io/the-great-blog/). 
