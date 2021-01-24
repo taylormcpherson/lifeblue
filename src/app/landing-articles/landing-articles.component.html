@@ -1,0 +1,40 @@
+<!---------------Landing Page 5 Articles Component-----------------
+
+The main content of this blog landing page is a listing of
+at least five article summaries. For information on each article,
+see the <article-container/> component.
+
+---------------------------------------------------------->
+<section class="section-wrapper">
+  <!--main content container-->
+  <div class="main-row">
+    <!--left column-->
+    <div class="left-col">
+      <div *ngFor="let art of leftArticles" class="article-container small-article">
+        <app-article-container isMainArticle="true"
+                               [title]="art.title" [date]="art.date" [summary]="art.summary"
+                               [img]="art.img" [alt]="art.alt">
+        </app-article-container>
+      </div>
+    </div>
+    <!--right column-->
+    <div class="right-col">
+      <div *ngFor="let art of rightArticles" class="article-container small-article">
+        <app-article-container [title]="art.title" [date]="art.date"
+                               [summary]="art.summary" [img]="art.img" [alt]="art.alt">
+        </app-article-container>
+        <app-article-container [title]="art.title" [date]="art.date"
+                               [summary]="art.summary" [img]="art.img" [alt]="art.alt">
+        </app-article-container>
+        <app-article-container [title]="art.title" [date]="art.date"
+                               [summary]="art.summary" [img]="art.img" [alt]="art.alt">
+        </app-article-container>
+        <app-article-container [title]="art.title" [date]="art.date"
+                               [summary]="art.summary" [img]="art.img" [alt]="art.alt">
+        </app-article-container>
+      </div>
+    </div>
+  </div>
+</section>
+<!--ending line-->
+<div class="horizontal-line"></div>

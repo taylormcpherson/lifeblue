@@ -1,0 +1,118 @@
+/*---global header styles--*/
+.global-header-wrapper {
+  width: 100%;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75em;
+  font-weight: 600;
+  -webkit-box-shadow: 0 2px 60px 0 #f2f2f2;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0 2px 60px 0 #f2f2f2;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0 2px 60px 0 #f2f2f2;
+
+  /*---eyebrow nav---*/
+  .eyebrow-nav {
+    display: flex;
+    flex-direction: row;
+    background: #4f4f4f;
+    color: #FFF;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .5em 4em .5em 0;
+
+    .eyebrow-item, a {
+      padding: .5em 4em .5em 0;
+      color: #FFF;
+    }
+
+    /*---searchbar---*/
+    i {
+      padding-right: 1em;
+    }
+    input, input:focus {
+      padding: .25em;
+      border-radius: .5em;
+      border: none;
+      outline: none;
+    }
+    input::placeholder, input[type="text"] {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+      padding-left: .8em;
+    }
+
+    /*---subscribe button--*/
+    #subscribe {
+      background: #C3FFC1;
+      padding: .5em 1em .5em 1em;
+      color: #4f4f4f;
+      border-radius: .5em;
+    }
+    #subscribe:active {
+      transform: translateY(.5px);
+    }
+  }
+
+  /*---main nav---*/
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    align-items: center;
+    justify-content: space-between;
+
+    /*---left hand side: logo and title---*/
+    .lhs:hover {
+      cursor: pointer;
+    }
+
+    .lhs {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      font-family: 'Tajawal', sans-serif;
+      font-weight: 600;
+      font-size: 1.25em;
+
+
+      .logo {
+        margin: 1em 1em 1em 4em;
+        min-width: 32px;
+      }
+    }
+
+    /*---right hand side: 5 links---*/
+    .rhs {
+      margin: 0 4em 0 2em;
+      display: flex;
+      justify-content: flex-end;
+      justify-self: flex-end;
+
+      a {
+        margin-left: 4em;
+        padding: 1em 1.5em 1em 1.5em;
+        transition: 0.3s;
+      }
+      a:hover {
+        background: #f7f7f7;
+        border-radius: .8em;
+      }
+    }
+  }
+}
+
+/*---responsive styling--*/
+@media screen and (max-width: 880px) {
+  .global-header-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .eyebrow-nav, .main-nav {
+      display: flex;
+      flex-wrap: wrap;
+
+      .rhs {
+        padding: 0 0 1em 3em;
+      }
+    }
+  }
+}

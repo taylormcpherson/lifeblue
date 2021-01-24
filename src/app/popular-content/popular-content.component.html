@@ -1,0 +1,63 @@
+<!------------Popular Content Component----------------
+
+Each of the following types of popular content must
+feature 10 article links:
+- Most Viewed
+- Most Commented
+- Most Shared
+The Client suggested a tabbed widget for these three lists
+
+--------------------------------------------------------------
+Note when reviewing code:
+0 : most viewed
+1 : most commented
+2 : most shared
+------------------------------------------------------------->
+<section class="section-wrapper">
+  <!--popular content-->
+  <div class="popular-content-wrapper">
+
+    <!--tabs-->
+    <div class="tab-wrapper">
+      <!--most viewed-->
+      <a class="pop-tag" id="viewed-tag" (click)="setMode(0)">
+        Most Viewed
+      </a>
+      <!--most commented-->
+      <a class="pop-tag" id="commented-tag" (click)="setMode(1)">
+        Most Commented
+      </a>
+      <!--most shared-->
+      <a class="pop-tag" id="shared-tag" (click)="setMode(2)">
+        Most Shared
+      </a>
+    </div>
+
+    <!---most viewed articles-->
+    <div *ngIf="mode==0" class="articles-wrapper" id="most-viewed-wrapper">
+      <div *ngFor="let art of mostViewed" class="article-self">
+        <app-article-container [title]="art.title" [date]="art.date"
+                               [summary]="art.summary" [img]="art.img" [alt]="art.alt">
+        </app-article-container>
+      </div>
+    </div>
+
+    <!--most commented articles-->
+    <div *ngIf="mode==1" class="articles-wrapper" id="most-commented-wrapper">
+      <div *ngFor="let art of mostCommented" class="article-self">
+        <app-article-container [title]="art.title" [date]="art.date"
+                               [summary]="art.summary" [img]="art.img" [alt]="art.alt">
+        </app-article-container>
+      </div>
+    </div>
+
+    <!--most shared articles-->
+    <div *ngIf="mode==2" class="articles-wrapper" id="most-shared-wrapper">
+      <div *ngFor="let art of mostShared" class="article-self">
+        <app-article-container [title]="art.title" [date]="art.date"
+                               [summary]="art.summary" [img]="art.img" [alt]="art.alt">
+        </app-article-container>
+      </div>
+    </div>
+  </div>
+</section>
