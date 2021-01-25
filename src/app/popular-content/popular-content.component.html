@@ -36,27 +36,57 @@ Note when reviewing code:
     <!---most viewed articles-->
     <div *ngIf="mode==0" class="articles-wrapper" id="most-viewed-wrapper">
       <div *ngFor="let art of mostViewed" class="article-self">
-        <app-article-container [title]="art.title" [date]="art.date"
-                               [summary]="art.summary" [img]="art.img" [alt]="art.alt">
-        </app-article-container>
+        <!---web article-->
+        <div *ngIf="!isSmall">
+          <app-article-container [title]="art.title" [date]="art.date"
+                                 [summary]="art.summary" [img]="art.img" [alt]="art.alt">
+          </app-article-container>
+        </div>
+        <!---mobile article-->
+        <div *ngIf="isSmall">
+          <app-article-container [title]="art.title" [date]="art.date"
+                                 [summary]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'"
+                                 [img]="art.img" [alt]="art.alt">
+          </app-article-container>
+        </div>
       </div>
     </div>
 
     <!--most commented articles-->
     <div *ngIf="mode==1" class="articles-wrapper" id="most-commented-wrapper">
       <div *ngFor="let art of mostCommented" class="article-self">
-        <app-article-container [title]="art.title" [date]="art.date"
-                               [summary]="art.summary" [img]="art.img" [alt]="art.alt">
-        </app-article-container>
+        <!---web article-->
+        <div *ngIf="!isSmall">
+          <app-article-container [title]="art.title" [date]="art.date"
+                                 [summary]="art.summary" [img]="art.img" [alt]="art.alt">
+          </app-article-container>
+        </div>
+        <!---mobile article-->
+        <div *ngIf="isSmall">
+          <app-article-container [title]="art.title" [date]="art.date"
+                                 [summary]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'"
+                                 [img]="art.img" [alt]="art.alt">
+          </app-article-container>
+        </div>
       </div>
     </div>
 
     <!--most shared articles-->
     <div *ngIf="mode==2" class="articles-wrapper" id="most-shared-wrapper">
       <div *ngFor="let art of mostShared" class="article-self">
-        <app-article-container [title]="art.title" [date]="art.date"
-                               [summary]="art.summary" [img]="art.img" [alt]="art.alt">
-        </app-article-container>
+        <!---web article-->
+        <div *ngIf="!isSmall">
+          <app-article-container [title]="art.title" [date]="art.date"
+                                 [summary]="art.summary" [img]="art.img" [alt]="art.alt">
+          </app-article-container>
+        </div>
+        <!---mobile article-->
+        <div *ngIf="isSmall">
+          <app-article-container [title]="art.title" [date]="art.date"
+                                 [summary]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'"
+                                 [img]="art.img" [alt]="art.alt">
+          </app-article-container>
+        </div>
       </div>
     </div>
   </div>

@@ -1,0 +1,24 @@
+<!---------------Article Page Component-----------------
+
+- a dummy page to show a full article
+
+---------------------------------------------------------->
+<app-global-header></app-global-header>
+<!--article page content-->
+<section>
+    <div class="article-container">
+        <div class="title-wrapper">
+            <h1 class="article-title"> {{a.title}}</h1>
+            <h3 class="article-description">{{a.summary}}</h3>
+            <p class="article-date">{{a.date}}</p>
+        </div>
+        <div class="main-img-wrapper">
+            <img src="{{a.img}}" alt="{{a.alt}}" width="100%">
+        </div>
+        <div class="main-text-wrapper" *ngFor="let count of tenCount">
+            <p>{{p.text}}</p>
+        </div>
+    </div>
+</section>
+<app-newsletter></app-newsletter>
+<app-global-footer></app-global-footer>

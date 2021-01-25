@@ -2,11 +2,8 @@ section {
   width: 100%;
   background: #4f4f4f;
   color: #FFFFFF;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
 
   .newsletter-wrapper {
     padding: 4em;
@@ -16,58 +13,111 @@ section {
       flex-direction: row;
       justify-content: center;
       align-items: flex-end;
+      font-family: 'Open Sans', sans-serif;
 
       .call-to-action {
         display: flex;
         flex-direction: column;
         padding: 0 4em 0 0;
-      }
-      p {
-        margin: 0;
-        padding-top: .5em;
-        color: #FFFFFF;
+
+        p {
+          margin: 0;
+          padding-top: .5em;
+          color: #FFFFFF;
+        }
+
+        label {
+          font-size: 2em;
+          font-weight: 600;
+          font-family: 'Tajawal', sans-serif;
+        }
+
+        #newsletter-email {
+          margin-right: .25em;
+        }
       }
 
-      label {
-        font-size: 2em;
-        font-weight: 600;
-        font-family: 'Tajawal', sans-serif;
-      }
+      .form-input {
+        input, input:focus {
+          padding: 1em 6em 1em 1em;
+          border-radius: .5em;
+          border: none;
+          outline: none;
+          font-size: 1em;
+        }
 
-      #newsletter-email {
-        margin-right: .5em;
-      }
-      input, input:focus {
-        padding: 1em 6em 1em 1em;
-        border-radius: .5em;
-        border: none;
-        outline: none;
-        font-size: .85em;
-      }
-      input::placeholder, input[type="text"] {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1em;
-        padding-left: .5em;
-        font-weight: 600;
-      }
+        input::placeholder, input[type="text"] {
+          padding-left: .5em;
+          opacity: .7;
+        }
 
-      #newsletter-submit {
-        background: #C3FFC1;
-        color: #4f4f4f;
-        font-weight: 600;
-      }
+        #newsletter-email {
+          margin-right: .5em;
+        }
 
-      input[type="submit"] {
-        padding: 1em 3em 1em 3em;
-      }
+        #newsletter-submit {
+          background: #C3FFC1;
+          color: #4f4f4f;
+          font-weight: 600;
+          padding: 1em 3em 1em 3em;
+        }
 
-      #newsletter-submit:hover {
-        cursor: pointer;
-      }
+        #newsletter-submit:hover {
+          cursor: pointer;
+        }
 
-      #newsletter-submit:active {
-        transform: translateY(.5px);
+        #newsletter-submit:active {
+          transform: translateY(.5px);
+        }
       }
     }
   }
 }
+
+/*---responsive styling----*/
+@media screen and (max-width: 900px) {
+  section {
+    .newsletter-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      form {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .call-to-action {
+          margin: 0 0 2em 0;
+          padding: 0;
+
+          label {
+            font-size: 1.8em;
+          }
+          #newsletter-email {
+            margin: 0;
+          }
+        }
+
+        .form-input {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+
+          input, input:focus {
+            padding: 1em 3em 1em 1em;
+          }
+
+          #newsletter-email {
+            margin: 0 0 .5em 0;
+          }
+
+          #newsletter-submit {
+            padding: 1em 4.7em 1em 4.7em;
+          }
+        }
+      }
+    }
+  }
+}
+

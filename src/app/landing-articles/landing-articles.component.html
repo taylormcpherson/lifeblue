@@ -8,30 +8,35 @@ see the <article-container/> component.
 <section class="section-wrapper">
   <!--main content container-->
   <div class="main-row">
-    <!--left column-->
+    <!--left column (1 big article)-->
     <div class="left-col">
       <div *ngFor="let art of leftArticles" class="article-container small-article">
-        <app-article-container isMainArticle="true"
-                               [title]="art.title" [date]="art.date" [summary]="art.summary"
-                               [img]="art.img" [alt]="art.alt">
-        </app-article-container>
+        <!--web big article-->
+        <div *ngIf="!isSmall">
+          <app-article-container isMainArticle="true"
+                                 [title]="art.title" [date]="art.date" [summary]="art.summary"
+                                 [img]="art.img" [alt]="art.alt">
+          </app-article-container>
+        </div>
+        <!--mobile big article-->
+        <div *ngIf="isSmall">
+          <app-article-container isMainArticle="true"
+                                 [title]="art.title" [date]="art.date"
+                                 [summary]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'"
+                                 [img]="art.img" [alt]="art.alt">
+          </app-article-container>
+        </div>
       </div>
     </div>
-    <!--right column-->
+    <!--right column (4 small articles)-->
     <div class="right-col">
-      <div *ngFor="let art of rightArticles" class="article-container small-article">
-        <app-article-container [title]="art.title" [date]="art.date"
-                               [summary]="art.summary" [img]="art.img" [alt]="art.alt">
-        </app-article-container>
-        <app-article-container [title]="art.title" [date]="art.date"
-                               [summary]="art.summary" [img]="art.img" [alt]="art.alt">
-        </app-article-container>
-        <app-article-container [title]="art.title" [date]="art.date"
-                               [summary]="art.summary" [img]="art.img" [alt]="art.alt">
-        </app-article-container>
-        <app-article-container [title]="art.title" [date]="art.date"
-                               [summary]="art.summary" [img]="art.img" [alt]="art.alt">
-        </app-article-container>
+      <div *ngFor="let count of fourCount">
+        <div *ngFor="let art of rightArticles" class="article-container small-article">
+          <!--web small articles-->
+          <app-article-container [title]="art.title" [date]="art.date" [summary]="art.summary"
+                                   [img]="art.img" [alt]="art.alt">
+          </app-article-container>
+        </div>
       </div>
     </div>
   </div>

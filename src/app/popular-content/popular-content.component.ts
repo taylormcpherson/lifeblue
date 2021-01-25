@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MOSTVIEWED, MOSTCOMMENTED, MOSTSHARED} from '../data-directory';
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-popular-content',
@@ -11,6 +12,7 @@ export class PopularContentComponent implements OnInit {
   mostViewed = MOSTVIEWED;
   mostCommented = MOSTCOMMENTED;
   mostShared = MOSTSHARED;
+  public isSmall: boolean;
 
   setMode(x): void {
     this.mode = x;
@@ -32,11 +34,20 @@ export class PopularContentComponent implements OnInit {
       shared.setAttribute('style', 'background: #d8dce0; font-weight: 600;');
     }
   }
-  constructor() {
-  }
+  constructor(public breakpointObserver: BreakpointObserver) { }
+
 
   ngOnInit(): void {
     this.mode = 0;
     this.setMode(0);
+    this.breakpointObserver
+        .observe(['(max-width: 1100px)'])
+        .subscribe((state: BreakpointState) => {
+          if (state.matches) {
+            this.isSmall = true;
+          } else {
+            this.isSmall = false;
+          }
+        });
   }
 }

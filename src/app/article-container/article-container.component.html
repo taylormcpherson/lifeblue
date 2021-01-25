@@ -8,38 +8,79 @@ must include:
 - preview image for the story
 
 ---------------------------------------------------------->
-
+<!-----WEB ARTICLE STYLES------>
 <!--main (big) article layout-->
-<div class="big-article-main-wrapper" *ngIf="isMainArticle">
-  <div class="big-article-container-wrapper">
-    <img class="article-img" src="{{img}}"  alt="{{alt}}" width="100%">
-    <div class="article-contents-wrapper">
-      <h3 class="article-title">{{title}}</h3>
-      <p class="article-summary">{{summary}}</p>
-      <div class="article-footer">
-        <p class="article-date">{{date}}</p>
-        <a class="article-link">view full article</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--small article layout-->
-<div class="small-article-main-wrapper" *ngIf="!isMainArticle">
-  <div class="small-article-container-wrapper">
-    <div class="article-contents-wrapper">
-      <div class="top-container">
-        <h3 class="article-title">{{title}}</h3>
+<div class="web-styles" *ngIf="!isSmall">
+  <div class="big-article-main-wrapper" *ngIf="isMainArticle">
+    <div class="big-article-container-wrapper">
+      <img class="article-img" src="{{img}}"  alt="{{alt}}" width="100%" routerLink="/article">
+      <div class="article-contents-wrapper">
+        <h3 class="article-title" routerLink="/article">{{title}}</h3>
         <p class="article-summary">{{summary}}</p>
-      </div>
-      <div class="article-footer">
-        <p class="article-date">{{date}}</p>
-        <a class="article-link">view full article</a>
+        <div class="article-footer">
+          <p class="article-date">{{date}}</p>
+          <a class="article-link" routerLink="/article">view full article</a>
+        </div>
       </div>
     </div>
-    <div class="img-wrapper">
-      <img class="article-img" src="{{img}}"  alt="{{alt}}" width="100%">
+  </div>
+
+  <!--small article layout-->
+  <div class="small-article-main-wrapper" *ngIf="!isMainArticle">
+    <div class="small-article-container-wrapper">
+      <div class="article-contents-wrapper">
+        <div class="top-container">
+          <h3 class="article-title" routerLink="/article">{{title}}</h3>
+          <p class="article-summary">{{summary}}</p>
+        </div>
+        <div class="article-footer">
+          <p class="article-date">{{date}}</p>
+          <a class="article-link" routerLink="/article">view full article</a>
+        </div>
+      </div>
+      <div class="img-wrapper">
+        <img class="article-img" src="{{img}}"  alt="{{alt}}" width="100%" routerLink="/article">
+      </div>
     </div>
   </div>
 </div>
 
+
+<!------TABLET STYLES---------->
+<div class="tablet-styles" *ngIf="isSmall && !superSmall">
+  <!----tablet article layout (big and small)--->
+  <div class="small-article-main-wrapper" *ngIf="!isMainArticle || isMainArticle">
+    <div class="small-article-container-wrapper">
+      <div class="article-contents-wrapper">
+        <div class="top-container">
+          <h3 class="article-title" routerLink="/article">{{title}}</h3>
+          <p class="article-summary">{{summary}}</p>
+        </div>
+        <div class="article-footer">
+          <p class="article-date">{{date}}</p>
+          <a class="article-link" routerLink="/article">view full article</a>
+        </div>
+      </div>
+      <div class="img-wrapper">
+        <img class="article-img" src="{{img}}"  alt="{{alt}}" width="100%" routerLink="/article">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------MOBILE STYLES---------->
+<div class="mobile-styles" *ngIf="superSmall">
+  <div class="big-article-main-wrapper" *ngIf="isMainArticle || !isMainArticle">
+    <div class="big-article-container-wrapper">
+      <h3 class="article-title" routerLink="/article">{{title}}</h3>
+      <div class="article-contents-wrapper">
+        <img class="article-img" src="{{img}}"  alt="{{alt}}" width="100%" routerLink="/article">
+        <p class="article-summary">{{summary}}</p>
+        <div class="article-footer">
+          <p class="article-date">{{date}}</p>
+          <a class="article-link" routerLink="/article">view full article</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

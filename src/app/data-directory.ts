@@ -1,4 +1,6 @@
-import {Article} from './data-skeletons';
+import {Article, ArticleParagraphs} from './data-skeletons';
+import {ArticlePageComponent} from './article-page/article-page.component';
+
 // ------GENERAL ARTICLE TEMPLATES-------------
 
 // big article template
@@ -21,7 +23,7 @@ export const BIGARTICLE: Article[] = [
 // small article template
 export const SMALLARTICLE: Article[] = [
   {
-    title: 'Small Article Title',
+    title: 'Article Title',
     date: 'Jan 21, 2021 | 3 min read',
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     img: 'https://images.ttisi.com/wp-content/uploads/2018/09/18093158/background-light-grey.png',
@@ -29,9 +31,21 @@ export const SMALLARTICLE: Article[] = [
   }
 ];
 
+// dummy paragraph template
+export const ARTICLEPARAGRAPH: ArticleParagraphs[] = [
+  {
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, ' +
+        'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut' +
+        ' enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut' +
+        ' aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit' +
+        ' in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur ' +
+        'sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit' +
+        ' anim id est laborum.'
+  }
+];
 
 
-// ------LANDING 5 ARTICLES-------------
+// ------LANDING PAGE 5 ARTICLES-------------
 
 // landing page main article
 export const LANDINGMIDDLE: Article[] = [

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BIGARTICLE, SMALLARTICLE } from '../data-directory';
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-landing-articles',
@@ -9,10 +10,19 @@ import { BIGARTICLE, SMALLARTICLE } from '../data-directory';
 export class LandingArticlesComponent implements OnInit {
   leftArticles = BIGARTICLE;
   rightArticles = SMALLARTICLE;
-
-  constructor() { }
+  fourCount = [4, 3, 2, 1];
+  public isSmall: boolean;
+  constructor(public breakpointObserver: BreakpointObserver) { }
 
   ngOnInit(): void {
+    this.breakpointObserver
+      .observe(['(max-width: 1100px)'])
+      .subscribe((state: BreakpointState) => {
+        if (state.matches) {
+          this.isSmall = true;
+        } else {
+          this.isSmall = false;
+        }
+      });
   }
-
 }

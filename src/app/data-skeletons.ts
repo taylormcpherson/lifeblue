@@ -5,3 +5,7 @@ export interface Article {
   img: string;
   alt: string;
 }
+
+export interface ArticleParagraphs {
+  text: string;
+}
