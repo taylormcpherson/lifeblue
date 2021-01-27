@@ -18,22 +18,20 @@ section {
       .call-to-action {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         padding: 0 4em 0 0;
 
         p {
           margin: 0;
           padding-top: .5em;
           color: #FFFFFF;
+          text-align: left;
         }
 
         label {
           font-size: 2em;
           font-weight: 600;
           font-family: 'Tajawal', sans-serif;
-        }
-
-        #newsletter-email {
-          margin-right: .25em;
         }
       }
 
@@ -44,15 +42,12 @@ section {
           border: none;
           outline: none;
           font-size: 1em;
+          margin: .25em;
         }
 
         input::placeholder, input[type="text"] {
           padding-left: .5em;
           opacity: .7;
-        }
-
-        #newsletter-email {
-          margin-right: .5em;
         }
 
         #newsletter-submit {
@@ -75,12 +70,42 @@ section {
 }
 
 /*---responsive styling----*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
   section {
+    .newsletter-wrapper {
+      form {
+        align-items: center;
+
+        .call-to-action {
+          padding: 0 2em 0 0;
+
+          label {
+            text-align: left;
+          }
+        }
+
+        .form-input {
+          input, input:focus {
+            padding: 1em 2em 1em 1em;
+          }
+          #newsletter-submit {
+            padding: 1em 4.2em 1em 4.2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section {
+    padding: 0 2em 0 2em;
+
     .newsletter-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 3em 1em 3em 1em;
 
       form {
         flex-direction: column;
@@ -90,9 +115,11 @@ section {
         .call-to-action {
           margin: 0 0 2em 0;
           padding: 0;
+          align-items: flex-start;
+          justify-content: flex-start;
 
           label {
-            font-size: 1.8em;
+            font-size: 1.75em;
           }
           #newsletter-email {
             margin: 0;
@@ -105,15 +132,16 @@ section {
           flex-wrap: wrap;
 
           input, input:focus {
-            padding: 1em 3em 1em 1em;
+            padding: .75em 2em .75em 1em;
           }
 
           #newsletter-email {
-            margin: 0 0 .5em 0;
+            margin: .25em .25em .25em 0;
           }
 
           #newsletter-submit {
-            padding: 1em 4.7em 1em 4.7em;
+            padding: .75em 2em .75em 2em;
+            margin: .25em .25em .25em 0;
           }
         }
       }

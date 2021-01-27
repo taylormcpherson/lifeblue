@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-secondary-content',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./secondary-content.component.less']
 })
 export class SecondaryContentComponent implements OnInit {
-
-  constructor() { }
+  public isSmall: boolean;
+  constructor(public breakpointObserver: BreakpointObserver) { }
 
   ngOnInit(): void {
+    this.breakpointObserver
+        .observe(['(max-width: 1100px)'])
+        .subscribe((state: BreakpointState) => {
+          if (state.matches) {
+            this.isSmall = true;
+          } else {
+            this.isSmall = false;
+          }
+        });
   }
 
 }
