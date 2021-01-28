@@ -30,13 +30,11 @@ see the <article-container/> component.
     </div>
     <!--right column (4 small articles)-->
     <div class="right-col">
-      <div *ngFor="let count of fourCount">
-        <div *ngFor="let art of rightArticles" class="article-container small-article">
-          <!--web small articles-->
-          <app-article-container [title]="art.title" [date]="art.date" [summary]="art.summary"
-                                   [img]="art.img" [alt]="art.alt">
-          </app-article-container>
-        </div>
+      <div *ngFor="let art of rightArticles" class="article-container small-article">
+        <!--web small articles-->
+        <app-article-container [title]="art.title" [date]="art.date" [summary]="art.summary"
+                                 [img]="art.img" [alt]="art.alt">
+        </app-article-container>
       </div>
     </div>
   </div>

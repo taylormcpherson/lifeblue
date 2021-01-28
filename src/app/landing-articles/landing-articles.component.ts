@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BIGARTICLE, SMALLARTICLE } from '../data-directory';
+import { BIGARTICLE, SMALLARTICLE, LANDINGRIGHT, LANDINGMAIN } from '../data-directory';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
 @Component({
@@ -8,9 +8,9 @@ import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
   styleUrls: ['./landing-articles.component.less']
 })
 export class LandingArticlesComponent implements OnInit {
-  leftArticles = BIGARTICLE;
-  rightArticles = SMALLARTICLE;
-  fourCount = [4, 3, 2, 1];
+  leftArticles = LANDINGMAIN;
+  rightArticles = LANDINGRIGHT;
+  // fourCount = [4, 3, 2, 1];
   public isSmall: boolean;
   constructor(public breakpointObserver: BreakpointObserver) { }
 

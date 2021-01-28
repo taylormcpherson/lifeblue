@@ -18,19 +18,19 @@ Note when reviewing code:
   <div class="popular-content-wrapper">
 
     <!--tabs-->
-    <div class="tab-wrapper">
+    <div class="tab-wrapper" id="tab-selector">
       <!--most viewed-->
-      <a class="pop-tag" id="viewed-tag" (click)="setMode(0)">
+      <div class="pop-tag" id="viewed-tag" (click)="setMode(0)">
         Most Viewed
-      </a>
+      </div>
       <!--most commented-->
-      <a class="pop-tag" id="commented-tag" (click)="setMode(1)">
+      <div class="pop-tag" id="commented-tag" (click)="setMode(1)">
         Most Commented
-      </a>
+      </div>
       <!--most shared-->
-      <a class="pop-tag" id="shared-tag" (click)="setMode(2)">
+      <div class="pop-tag" id="shared-tag" (click)="setMode(2)">
         Most Shared
-      </a>
+      </div>
     </div>
 
     <!---most viewed articles-->

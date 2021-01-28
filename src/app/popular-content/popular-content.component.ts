@@ -21,17 +21,17 @@ export class PopularContentComponent implements OnInit {
     const commented = document.getElementById('commented-tag'); // active when x==1
     const shared = document.getElementById('shared-tag');       // active when x==2
     if (x === 0) {
-      viewed.setAttribute('style', 'background: #d8dce0; font-weight: 600;');
-      commented.setAttribute('style', 'background: #f7f7f7; font-weight: 400;');
-      shared.setAttribute('style', 'background: #f7f7f7; font-weight: 400;');
+      viewed.setAttribute('style', 'background: #ebebeb; font-weight: 600;');
+      commented.setAttribute('style', 'background: transparent; font-weight: 400;');
+      shared.setAttribute('style', 'background: transparent; font-weight: 400;');
     } else if (x === 1) {
-      viewed.setAttribute('style', 'background: #f7f7f7; font-weight: 400;');
-      commented.setAttribute('style', 'background: #d8dce0; font-weight: 600;');
-      shared.setAttribute('style', 'background: #f7f7f7; font-weight: 400;');
+      viewed.setAttribute('style', 'background: transparent; font-weight: 400;');
+      commented.setAttribute('style', 'background: #ebebeb; font-weight: 600;');
+      shared.setAttribute('style', 'background: transparent; font-weight: 400;');
     } else {
-      viewed.setAttribute('style', 'background: #f7f7f7; font-weight: 400;');
-      commented.setAttribute('style', 'background: #f7f7f7; font-weight: 400;');
-      shared.setAttribute('style', 'background: #d8dce0; font-weight: 600;');
+      viewed.setAttribute('style', 'background: transparent; font-weight: 400;');
+      commented.setAttribute('style', 'background: transparent; font-weight: 400;');
+      shared.setAttribute('style', 'background: #ebebeb; font-weight: 600;');
     }
   }
   constructor(public breakpointObserver: BreakpointObserver) { }
