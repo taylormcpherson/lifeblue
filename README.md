@@ -4,7 +4,7 @@ The goal of this project is to create a modern blog layout for a fictitious Clie
 The layout, hierarchy, and user experience of this blog were created without the help of any templates 
 or styleguides other than those I created myself.
 
-**You can the live blog [here](https://taylormcpherson.github.io/the-great-blog/).**
+**You can view the live blog [here](https://taylormcpherson.github.io/the-great-blog/)**, hosted on GitHub Pages.
 For further inspection, feel free to download the source code. 
 
 ### Author Contact Info
