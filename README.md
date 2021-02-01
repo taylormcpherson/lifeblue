@@ -34,7 +34,7 @@ Created by *Taylor McPherson* for Lifeblue.
     I would love nothing more than to fix all this under some great mentorship or more hands-on practice.
     - I tried to leave clarifying comments and minimize repetition in my code, but due to the timeframe of this project,
      it sometimes fell short. Could be easily fixed with a little more time and attention.
-- Further code testing
+- More code testing
     - I did not test on Firefox or other browsers than Chrome and Safari, which should absolutely happen in the future. 
 - Accessibility
     - Accessibility is something I do not have a lot of formal schooling in, but am eager to learn in my design and code practices. 
