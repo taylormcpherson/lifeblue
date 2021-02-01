@@ -36,6 +36,9 @@ Created by *Taylor McPherson* for Lifeblue.
      it sometimes fell short. Could be easily fixed with a little more time and attention.
 - Further code testing
     - I did not test on Firefox or other browsers than Chrome and Safari, which should absolutely happen in the future. 
+- Accessibility
+    - Accessibility is something I do not have a lot of formal schooling in, but am eager to learn in my design and code practices. 
+    I did my best to use relevant HTML tags and provide website color contrast, but this is a major week point of my blog, and I 100% acknowledge it could - and should - be improved.
 - User Experience Design
     - I had a lot of fun researching and planning the UX design of this website with the ask that it is a "modern blog". 
     But the quick turn around of this project left a few pitfalls still. Ideally, I would love to have a deeper understanding 
