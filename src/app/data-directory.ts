@@ -64,7 +64,7 @@ export const LANDINGMAIN: Article[] = [
 // landing page small articles on the right
 export const LANDINGRIGHT: Article[] = [
   {
-    title: 'Why I Wish I was a Scott Tott',
+    title: 'Why I Wish I was a Scott Tot',
     date: 'Jan 21, 2021 | 3 min read',
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     img: 'https://pbs.twimg.com/media/EsRS1vBXYAMp28p?format=jpg&name=900x900',
@@ -203,7 +203,7 @@ export const MOSTVIEWED: Article[] = [
 // 10 most commented articles
 export const MOSTCOMMENTED: Article[] = [
   {
-    title: 'Why I Wish I was a Scott Tott',
+    title: 'Why I Wish I was a Scott Tot',
     date: 'Jan 21, 2021 | 3 min read',
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ' +
       'incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ' +
@@ -233,7 +233,7 @@ export const MOSTCOMMENTED: Article[] = [
     alt: 'bernie-on-saturn'
   },
   {
-    title: 'Why I Wish I was a Scott Tott',
+    title: 'Why I Wish I was a Scott Tot',
     date: 'Jan 21, 2021 | 3 min read',
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ' +
         'incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ' +
@@ -263,7 +263,7 @@ export const MOSTCOMMENTED: Article[] = [
     alt: 'bernie-on-saturn'
   },
   {
-    title: 'Why I Wish I was a Scott Tott',
+    title: 'Why I Wish I was a Scott Tot',
     date: 'Jan 21, 2021 | 3 min read',
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ' +
         'incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ' +
@@ -293,7 +293,7 @@ export const MOSTCOMMENTED: Article[] = [
     alt: 'bernie-on-saturn'
   },
   {
-    title: 'Why I Wish I was a Scott Tott',
+    title: 'Why I Wish I was a Scott Tot',
     date: 'Jan 21, 2021 | 3 min read',
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ' +
         'incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ' +
