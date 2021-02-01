@@ -7,27 +7,27 @@ or styleguides other than those I created myself.
 **You can view the live blog [here](https://taylormcpherson.github.io/the-great-blog/)**, hosted on GitHub Pages.
 For further inspection, feel free to download the source code. 
 
-### Author Contact Info
+## Author Contact Info
 Created by *Taylor McPherson* for Lifeblue. 
 - email: tmmcpher@ucsc.edu
 - phone: (808)647-0908
 - [portfolio / resume](https://taylormcpherson.github.io)
 
-### Frameworks and Preprocessors Used
+## Frameworks and Preprocessors Used
 - [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
 - LESS styling
 - Flexbox
 - Font Awesome Icons
 - Figma for design planning. View my project file [here](https://www.figma.com/file/4Z39m7AZGsGWd5J8iJPEZL/Lifeblue-Assessment?node-id=0%3A1).
 
-### Notable Achievements
+## Notable Achievements
 - Fully responsive layout using Flexbox, media queries, and different style guides / HTML for different screen sizes when applicable.
 - Data binding used for most text and complex component content.
 - Tested on Chrome and safari, as well as varying screen sizes (mobile / tablet / web). 
 - Extensive research and planning on user experience and design.
 - If you look closely you will see it is [Bernie sits themed](https://www.irishtimes.com/news/world/us/bernie-sanders-meme-encapsulates-paradox-of-hero-for-young-americans-1.4471178). It felt relevant and fun.
 
-### Room for Improvement
+## Room for Improvement
 - Code organization / best practices
     - I chose to use Angular because I liked how I could modularize and organize my code with it. That said, I am self-taught 
     and have only been using it for ~6months, so I am sure there are organization or best practices bugs with this framework. 
@@ -44,8 +44,8 @@ Created by *Taylor McPherson* for Lifeblue.
     These got the least amount of attention and could be further improved with more iterations and time.
    
 
-### Works Cited
-##### Images Used
+## Works Cited
+### Images Used
 - [Bernie in Seurat Painting](https://pbs.twimg.com/media/EsQd6UCXYAMFxAi?format=jpg&name=900x900)
 - [Bernie Sits with Michael Scott](https://pbs.twimg.com/media/EsRS1vBXYAMp28p?format=jpg&name=900x900)
 - [Bernie on Ski Lift](https://pbs.twimg.com/media/EsOnqA5XcAIk3f-?format=jpg&name=small)
@@ -57,11 +57,11 @@ Created by *Taylor McPherson* for Lifeblue.
 - [Bernie on Saturn](https://cdn.mos.cms.futurecdn.net/vfTtT6y3CE373NCAYWWeUK-1024-80.jpg.webp)
 - [Light Grey Background Img](https://images.ttisi.com/wp-content/uploads/2018/09/18093158/background-light-grey.png)
 
-##### Help Sources
+### Help Sources
 - [Stackoverflow](https://stackoverflow.com/) for all imaginable questions
 - CSS from [W3Schools](https://www.w3schools.com/)
 
-##### Inspiration Sources
+### Inspiration Sources
 - [Dribbble](https://dribbble.com/)
 - [The New York Times](https://www.nytimes.com/)
 - [Wired](https://www.wired.com/)
